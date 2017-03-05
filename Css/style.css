@@ -1,0 +1,206 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote { /* declares all the possible use within the css to "0" */
+	margin: 0; padding: 0; border: 0;
+}
+
+body { /* styles the body */
+	background: black;/*In this case the back ground of the body is black */
+	font: 16px Helvetica, Arial, Sans-Serif; color:  #636363; line-height: 24px;/*font is 16, style is first Helvetica, if not available then Arial, if not available then San-Serif*/
+}/* color is the combination of RGB red, green and blue, in this case 63 of each, line height is 24px */
+	
+
+#container {/*Styles and formats the container ID */
+	width: cover; margin: 0 auto;/*Container is cover - meaning full area cover */
+
+}
+
+#logo {/*Formats and styles the logo ID */
+	margin: 20px auto 0 auto; position: relative; width: 1100px; /*Logo has a top margin of 20px the rest auto and "0"*/
+}
+
+#img {/*Formats and styles the images */
+	display: inline;/*displayed in an in-line order */
+	float: left;/*will float left */
+	margin: 5px 5px 5px 5px;/*will have a margin of 5px each side */
+	padding-bottom: 4px black;/*padding thickness 4px and back each side */
+	padding-left: 4px black;
+	padding-right: 4px black;
+	padding-top: 4px black;
+}
+
+	
+
+#nav-wrapper {/*Formats and styles the nav-wrapper */
+	width: cover; /*its full cover from one end to another */
+	margin:0 auto;
+	padding:20px 0;/*paddin is 20px */
+	background:black;/*background is black */
+}
+
+ul#nav {/*ordered list format for nav - font verdana, size 14px, list-style no- dont want it in a list going down, width cover, postition is relative so moves as screen gets shorter */
+	font-family: Verdana;
+	font-size:14px;
+	list-style:none;
+	margin:0 auto;
+	padding:0;
+	width: cover;
+	position: relative;
+}
+
+ul#nav li {/*the items listed are inline hortizontally */
+	display: inline;
+}
+
+ul#nav li a {/*the anchor has no anchor decoration like blue font and underlined, it is a block, with black background, white font, floating left, with text at the center and solid white borders around the nav buttons the thickness of 2px */
+	text-decoration:none;/* padding is 5px and 21px*/
+	display: block;
+	padding:5px 21px;
+	background:black;
+	color:white;
+	float: left;
+	text-align:center;
+	border-top:2px solid white;
+	border-right:2px solid white;
+	border-bottom:2px solid white;
+	border-left:2px solid white;
+}
+
+ul#nav li a:hover {/*hover meaning when the mouse hovers over the nav, the background will become grey and font will become black, with black borders 2px wide */
+	background:grey;
+	color:black;
+	border-top:2px solid black;
+	border-right:2px solid black;
+	border-bottom:2px solid black;
+	border-left:2px solid black;
+}
+
+#header {/*header is black with 230px height and padding of 52px top and 57px left */
+	height: 230px; padding: 52px 0 0 57px;
+	background: black;
+}
+
+#header.page {/*header page- any page that isnt home page - the height of the header is 80px and padding is the same as the home header, background is black*/
+	height: 80px; padding: 52px 0 0 57px;
+	background: black;
+}
+
+	#header h1 {/*heading one in header - font is 38px, with georgia, if not there, then serif, color is white, letter spacing is 2px and margin bottom margin is 20px*/
+		font: 38px Georgia, Serif; color: white; letter-spacing: 2px; margin: 0 0 20px 0;
+		text-shadow: 0px 3px 3px grey;/*shadow is grey with botton and side of 3px */
+	}
+	#header h2 {/*headding two is 510px width, font 30px same font options as header 1, color white, same letter spacing as h1 and same shadow as h1*/
+		width: 510px; font: 30px Georgia, Serif; color: white; letter-spacing: 2px; margin: 0 0 20px 0;
+		text-shadow: 0px 3px 3px grey;
+	}
+	
+	
+#content { /*content id is black with repeat feature, with padding listed below and overflow hidden */
+	background: black repeat-y;
+	padding: 57px 69px 50px 69px; overflow: hidden;
+}
+	#content h2 {
+		font: 30px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+	}
+
+	#content h3 {
+		font: 26px Georgia, Serif; letter-spacing: 2px; margin: 0 0 20px 0;
+	}
+	
+	#content p {
+		margin: 0 0 30px 0;
+	}
+	
+	#content a {
+		color: White; text-decoration: none;/* no anchor decorations*/
+	}
+		#content a:hover { /* hover is grey */
+			color: grey;
+		}
+
+		
+		
+#content #contact {
+	width: 411px; float: left; margin: 0 40px 0 0;
+}
+
+	#content #contact label { /*label is clear with uppercase writing and fonr size of 16px, width of 95px and margins as listed below, with float left and clear left as well */
+		float: left; clear: left; margin: 11px 20px 0 0; width: 95px;
+		text-align: right; font-size: 16px;
+		text-transform: uppercase;
+	}
+	
+	#content #contact input { /*input has grey backgroup and sans-serif font the size of 16px and color white input and width of 256px, height of 35px and padding and margins listed below */
+		width: 256px; height: 35px; padding: 5px 20px 0px 20px; margin: 0 0 20px 0;
+		background: grey;
+		background: grey;
+		background: grey;
+		border-radius: 5px;
+		font-family: sans-serif; font-size: 16px; color: white;
+	}
+		input::input-placeholder  {/*both input placeholders are white */
+	    	color: white;
+		}
+		input:placeholder {
+		    color: white;
+		}
+	
+	#content #contact textarea {/*text area is same as above */
+		width: 256px; height: 170px; padding: 12px 20px 0px 20px; margin: 0 0 20px 0;
+		background: grey;
+		background: grey;
+		background: grey;
+		border-radius: 5px; 
+		font-family: sans-serif; font-size: 16px; color: white;
+	}
+		#content #contact textarea:input-placeholder  {
+	    	color: white;
+		}
+		#content #contact textarea:placeholder {
+		    color: white;
+		}
+	
+	#content #contact input:focus, #content #contact textarea:focus {/*back ground color of input is black */
+		background: black;
+		background: black;
+		background: black;
+	}
+	
+	#content #contact input[type=submit] {/*submut button is black with white borders of 1px and cursor pointers with width, height and paddings as listed below */
+		width: 185px; height: 52px; float: right; padding: 10px 15px; 
+		border: 1px solid white;
+		background: black;
+		background: black;
+		cursor: pointer;
+	}
+
+
+#content #social { /*the social icon and link area with parameters as listed below*/
+	width: 371px; float: left; 
+}		
+	#content #social ul {
+		list-style: none;
+	}
+		#content #social ul li {
+			float: left; margin: 0 20px 20px 0;
+		}
+			#content #social ul li a {
+				display: block; width: 100px; padding: 5px 0 5px 45px;
+			}
+				#content #social ul li a.LinkedIn { background-position: 0 -3px; }
+
+		
+#footer {/*footer is grey, overflow hidden with no text decoration and hover color of black as well as parameters listed below*/
+	background: grey; no-repeat; padding: 40px 0 0 0;
+	overflow: hidden; margin: 0 0 30px 0;
+}
+	#footer p#copyright {
+		font-size: 15px; float: left; margin: 0 0 0 20px; color: white;
+	}
+	#footer p#back-top {
+		font-size: 15px; float: right; margin: 0 30px 0 0;
+	}
+		#footer a {
+		color: white; text-decoration: none;
+	}
+		#footer a:hover {
+			color: black;
+		}
